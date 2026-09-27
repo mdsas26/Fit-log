@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
     return (
         <section className="px-6 py-10 md:px-10">
-            <div className="flex min-h-[400px] items-center justify-between rounded-2xl border border-zinc-800 bg-[#15171c] px-8 py-12 md:px-12">
+            <div className="flex .min-h-[400px] items-center justify-between rounded-2xl border border-zinc-800 bg-[#15171c] px-8 py-12 md:px-12">
 
                 {/* Left Content */}
                 <div className="max-w-2xl">
@@ -37,7 +37,7 @@ const Hero = () => {
                         alt="Workout illustration"
                         width={450}
                         height={350}
-                        className="h-auto w-[350px]"
+                        className="h-auto .w-[350px]"
                     />
                 </div>
             </div>

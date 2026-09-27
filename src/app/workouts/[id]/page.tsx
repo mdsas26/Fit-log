@@ -36,7 +36,7 @@ const WorkoutDetailsPage = async ({
                             LEFT - WORKOUT IMAGE
                         ========================== */}
                         <div className="flex justify-center">
-                            <div className="relative h-[500px] w-full max-w-[520px] overflow-hidden rounded-xl bg-[#15171c] md:h-[600px] lg:h-[650px]">
+                            <div className="relative .h-[500px] w-full .max-w-[520px] overflow-hidden rounded-xl bg-[#15171c] .md:h-[600px] .lg:h-[650px]">
                                 <Image
                                     src={workout.image}
                                     alt={workout.name}
@@ -49,7 +49,7 @@ const WorkoutDetailsPage = async ({
                         {/* =========================
                             RIGHT - WORKOUT DETAILS
                         ========================== */}
-                        <div className="w-full max-w-[600px]">
+                        <div className="w-full `max-w-[600px]`">
 
                             {/* Title */}
                             <h1 className="font-oswald text-4xl font-semibold uppercase leading-none text-white md:text-5xl xl:text-6xl">

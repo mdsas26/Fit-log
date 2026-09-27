@@ -223,7 +223,7 @@ const MyPlanPage = () => {
             ========================== */}
 
             {sortedList.length === 0 && (
-                <section className="mt-6 flex min-h-[360px] flex-col items-center justify-center rounded-xl border border-dashed border-zinc-800 text-center">
+                <section className="mt-6 flex `min-h-[360px]` flex-col items-center justify-center rounded-xl border border-dashed border-zinc-800 text-center">
 
                     <h2 className="font-oswald text-2xl font-semibold uppercase">
                         NOTHING HERE YET
