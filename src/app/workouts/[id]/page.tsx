@@ -32,24 +32,21 @@ const WorkoutDetailsPage = async ({
                 <section className="px-5 py-12 md:px-8 lg:px-10 xl:px-14">
                     <div className="grid items-start gap-10 lg:grid-cols-2 xl:gap-16">
 
-                        {/* =========================
-                            LEFT - WORKOUT IMAGE
-                        ========================== */}
+                        {/* LEFT - WORKOUT IMAGE */}
                         <div className="flex justify-center">
-                            <div className="relative .h-[500px] w-full .max-w-[520px] overflow-hidden rounded-xl bg-[#15171c] .md:h-[600px] .lg:h-[650px]">
+                            <div className="relative h-[500px] w-full max-w-[520px] overflow-hidden rounded-xl bg-[#15171c] md:h-[600px] lg:h-[650px]">
                                 <Image
                                     src={workout.image}
                                     alt={workout.name}
                                     fill
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                     className="object-cover"
                                 />
                             </div>
                         </div>
 
-                        {/* =========================
-                            RIGHT - WORKOUT DETAILS
-                        ========================== */}
-                        <div className="w-full `max-w-[600px]`">
+                        {/* RIGHT - WORKOUT DETAILS */}
+                        <div className="w-full max-w-[600px]">
 
                             {/* Title */}
                             <h1 className="font-oswald text-4xl font-semibold uppercase leading-none text-white md:text-5xl xl:text-6xl">
@@ -73,9 +70,7 @@ const WorkoutDetailsPage = async ({
                                 ))}
                             </div>
 
-                            {/* =========================
-                                WORKOUT SPECS
-                            ========================== */}
+                            {/* WORKOUT SPECS */}
                             <div className="mt-8 overflow-hidden rounded-xl border border-zinc-800 bg-[#15171c]">
 
                                 {/* Equipment */}
@@ -156,9 +151,7 @@ const WorkoutDetailsPage = async ({
                                 </div>
                             </div>
 
-                            {/* =========================
-                                INSTRUCTIONS
-                            ========================== */}
+                            {/* INSTRUCTIONS */}
                             <div className="mt-8">
 
                                 <h2 className="font-oswald text-xl font-semibold uppercase text-white md:text-2xl">
@@ -185,9 +178,7 @@ const WorkoutDetailsPage = async ({
                                 </ol>
                             </div>
 
-                            {/* =========================
-                                ADD / SAVE BUTTONS
-                            ========================== */}
+                            {/* ADD / SAVE BUTTONS */}
                             <WorkoutActions workout={workout} />
 
                         </div>

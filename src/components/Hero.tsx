@@ -37,7 +37,7 @@ const Hero = () => {
                         alt="Workout illustration"
                         width={450}
                         height={350}
-                        className="h-auto .w-[350px]"
+                        className="h-auto w-[350px]"
                     />
                 </div>
             </div>
