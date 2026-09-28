@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Hero = () => {
     return (
-        <section className="px-6 py-10 md:px-10">
-            <div className="flex .min-h-[400px] items-center justify-between rounded-2xl border border-zinc-800 bg-[#15171c] px-8 py-12 md:px-12">
+        <section className="px-5 py-8 md:px-10 md:py-10">
+            <div className="flex min-h-[400px] flex-col items-center justify-center gap-10 rounded-2xl border border-zinc-800 bg-[#15171c] px-6 py-10 text-center md:flex-row md:justify-between md:gap-0 md:px-12 md:py-12 md:text-left">
 
                 {/* Left Content */}
                 <div className="max-w-2xl">
@@ -11,15 +11,15 @@ const Hero = () => {
                         WORKOUT LIBRARY
                     </p>
 
-                    <h1 className="text-5xl font-black leading-[0.95] tracking-tight text-white md:text-7xl">
+                    <h1 className="text-4xl font-black leading-[0.95] tracking-tight text-white sm:text-5xl md:text-7xl">
                         TRAIN WITH INTENT.
                         <br />
                         LOG EVERY SET.
                     </h1>
 
-                    <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-400">
-                        FitLog is a dark, no-nonsense gym companion: pick a lift, lock it
-                        into today's plan, and watch the week's work add up.
+                    <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-zinc-400 md:mx-0">
+                        FitLog is a dark, no-nonsense gym companion: pick a lift,
+                        lock it into today's plan, and watch the week's work add up.
                     </p>
 
                     <a
@@ -31,15 +31,16 @@ const Hero = () => {
                 </div>
 
                 {/* Right Image */}
-                <div className="hidden md:block">
+                <div className="flex justify-center">
                     <Image
                         src="/banner.png"
                         alt="Workout illustration"
                         width={450}
                         height={350}
-                        className="h-auto w-[350px]"
+                        className="h-auto w-[220px] sm:w-[280px] md:w-[350px]"
                     />
                 </div>
+
             </div>
         </section>
     );
